@@ -3404,19 +3404,6 @@ body {
 
 /* Food Hero - Redesigned Modern Design */
 
-.food-hero::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    
-    background-size: 60px 60px;
-    animation: move 3s linear infinite;
-    opacity: 0.3;
-    z-index: 1;
-}
 
 @keyframes move {
     0% { background-position: 0 0; }
@@ -3827,7 +3814,8 @@ body {
     gap: 1.5rem;
 }
 .intro-section,.gaming-section,.perks-section,.responsible-gaming-section,.newsletter-section,.faq-section,
-.how-it-works-section,.benefits-section,.join-section,.connected-section{
+.how-it-works-section,.benefits-section,.join-section,.connected-section,.lounge-section,
+.menu-section{
     padding: 40px 0;
 }
 .gaming-content {
