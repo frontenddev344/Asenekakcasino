@@ -3826,7 +3826,8 @@ body {
 .nav-menu {
     gap: 1.5rem;
 }
-.intro-section,.gaming-section,.perks-section,.responsible-gaming-section,.newsletter-section,.faq-section{
+.intro-section,.gaming-section,.perks-section,.responsible-gaming-section,.newsletter-section,.faq-section,
+.how-it-works-section,.benefits-section,.join-section,.connected-section{
     padding: 40px 0;
 }
 .gaming-content {
