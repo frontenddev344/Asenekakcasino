@@ -3811,6 +3811,13 @@ body {
 }
 
 /* Comprehensive Responsive Styles for All Pages */
+@media (max-width: 1199px) {
+.contact-item a {
+
+    font-weight: 400;
+    font-size: 14px;
+}
+}
 
 @media (max-width: 991px) {
 .nav-link {
