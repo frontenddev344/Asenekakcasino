@@ -3826,6 +3826,13 @@ body {
 .nav-menu {
     gap: 1.5rem;
 }
+.intro-section,.gaming-section,.perks-section,.responsible-gaming-section,.newsletter-section,.faq-section{
+    padding: 40px 0;
+}
+.gaming-content {
+
+    margin-bottom: 2rem;
+}
 }
 
 /* Tablet Styles (768px and below) */
