@@ -1372,7 +1372,7 @@ body {
     }
     
     .social-links-large {
-        flex-direction: column;
+
         align-items: center;
     }
     
@@ -2156,7 +2156,7 @@ body {
     }
     
     .social-links-large {
-        flex-direction: column;
+
         align-items: center;
     }
     
@@ -3649,7 +3649,7 @@ body {
     }
     
     .social-links-large {
-        flex-direction: column;
+   
         align-items: center;
         gap: 1rem;
     }
