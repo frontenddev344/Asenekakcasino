@@ -3812,6 +3812,15 @@ body {
 
 /* Comprehensive Responsive Styles for All Pages */
 
+@media (max-width: 991px) {
+.nav-link {
+    font-size: 14px;
+}
+.nav-menu {
+    gap: 1.5rem;
+}
+}
+
 /* Tablet Styles (768px and below) */
 @media (max-width: 768px) {
     /* General Layout */
