@@ -490,7 +490,7 @@ body {
 }
 
 .feature-card:hover {
-    transform: translateY(-5px);
+    /* transform animation removed */
 }
 
 .feature-card * {
@@ -4183,8 +4183,8 @@ section.why-choose-section {
 
 /* Gaming Carousel Section */
 .gaming-carousel-section {
-
     background: #f8f9fa;
+    padding: 80px 0;
 }
 
 .gaming-carousel-section h2 {
