@@ -10,8 +10,15 @@
     <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
 </head>
 <body>
+   <!-- COVID-19 Banner -->
+   <div class="covid-banner">
+        <p>We follow the Government of Manitoba COVID-19 guidelines. To find out more, <a href="#" class="covid-link">click here!</a></p>
+    </div>
+
     <!-- Header -->
     <header class="header">
         <nav class="navbar">
@@ -23,7 +30,7 @@
                 </div>
                 <ul class="nav-menu">
                     <li class="nav-item">
-                        <a href="./" class="nav-link">Home</a>
+                        <a href="./" class="nav-link ">Home</a>
                     </li>
                     <li class="nav-item">
                         <a href="gaming" class="nav-link">Gaming</a>
@@ -41,6 +48,11 @@
                         <a href="contact" class="nav-link">Contact</a>
                     </li>
                 </ul>
+                <div class="social-icon">
+                    <a href="#" class="facebook-link">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                </div>
                 <div class="hamburger">
                     <span class="bar"></span>
                     <span class="bar"></span>
@@ -53,7 +65,7 @@
     <!-- Hero Section -->
     <section class="about-hero">
         <div class="hero-content">
-            <h1>About Aseneskak Casino</h1>
+            <h1>About</h1>
  
         </div>
     </section>
@@ -71,31 +83,66 @@
             </div>
         </section>
 
+        <!-- About Carousel Section -->
+        <section class="about-carousel-section">
+            <div class="container">
+           
+                <div class="about-carousel owl-carousel owl-theme">
+                    <div class="carousel-item">
+                        <img src="./img/gm-01.jpg" alt="Slot machines at Aseneskak Casino">
+                        
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/gm-02.jpg" alt="Community collaboration at Aseneskak Casino">
+                        
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/gm-03.jpg" alt="High Roller Lounge at Aseneskak Casino">
+                        
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/gm-04.jpg" alt="Trapper's Club benefits at Aseneskak Casino">
+                        
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/gm-05.jpg" alt="Northern hospitality at Aseneskak Casino">
+                      
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/gm-06.jpg" alt="Shuttle service at Aseneskak Casino">
+                       
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- Community Roots Section -->
         <section id="community-roots" class="community-roots-section">
             <div class="container">
-                <h2>Our Community Roots</h2>
+                
                 <div class="community-roots-content">
                     <div class="community-roots-text">
+                        <h2>Our Community Roots</h2>
                         <p>Owned by the Opaskwayak Cree Nation and five other partner First Nations, Aseneskak Casino is more than a business — it's a symbol of collaboration and growth. The casino creates jobs, supports local suppliers, and contributes revenue that helps fund essential programs and services within our communities.</p>
                     </div>
                     <div class="community-roots-image">
-                        <img src="./img/community.png" alt="Community collaboration at Aseneskak Casino">
+                        <img src="./img/gm-02.jpg" alt="Community collaboration at Aseneskak Casino">
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- Commitment to Guests Section -->
-        <section class="commitment-section">
+       
+        <section class="intro-section">
             <div class="container">
-                <h2>Commitment to Guests</h2>
-                <div class="commitment-content">
+                <div class="intro-content">
+                    <h2>Commitment to Guests</h2>
                     <p>We aim to deliver excellent customer service with a focus on respect, hospitality, and safety. Our staff reflects the diversity of the region and is trained to ensure every visit is positive, welcoming, and memorable.</p>
+                
                 </div>
             </div>
         </section>
-
         <!-- Investing in the Future Section -->
         <section class="future-section">
             <div class="container">
@@ -107,11 +154,13 @@
         </section>
 
         <!-- Contact and Connect Section -->
-        <section class="contact-connect-section">
+       
+        <section class="intro-section">
             <div class="container">
-                <h2>Contact and Connect</h2>
-                <div class="contact-connect-content">
+                <div class="intro-content">
+                    <h2>Contact and Connect</h2>
                     <p>We invite you to visit and experience Aseneskak Casino for yourself. For inquiries, email us at <a href="mailto:info@aseneskakcasino.com">info@aseneskakcasino.com</a>.</p>
+              
                 </div>
             </div>
         </section>
@@ -122,12 +171,6 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <div class="nav-logo footr-logo">
-                        <a href="./">
-                            <img src="./img/logo.svg" alt="Aseneskak Casino Logo" class="logo-img">
-                        </a>
-                    </div>
-                    <p>Your Northern Manitoba Gaming Destination</p>
                     <div class="social-links">
                         <a href="#"><i class="fab fa-facebook"></i></a>
                         <a href="#"><i class="fab fa-x-twitter"></i></a>
@@ -135,18 +178,7 @@
                     </div>
                 </div>
                 <div class="footer-section">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="gaming">Gaming</a></li>
-                        <li><a href="trappers-club">Trapper's Club</a></li>
-                        <li><a href="food-drink">Food & Drink</a></li>
-                        <li><a href="about">About</a></li>
-                        <li><a href="contact">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Legal</h4>
-                    <ul>
+                    <ul class="legal-links-horizontal">
                         <li><a href="privacy-policy">Privacy Policy</a></li>
                         <li><a href="personal-data-policy">Personal Data Policy</a></li>
                         <li><a href="terms-conditions">Terms and Conditions</a></li>
@@ -154,29 +186,43 @@
                         <li><a href="responsible-gaming">Responsible Gaming</a></li>
                     </ul>
                 </div>
-                <div class="footer-section">
-                    <h4>Contact Info</h4>
-                    <p><i class="fas fa-envelope"></i> info@aseneskakcasino.com</p>
-                    <p><i class="fas fa-map-marker-alt"></i> Opaskwayak Cree Nation, MB</p>
-                  
-                </div>
+                
             </div>
             <div class="footer-bottom">
                 <div class="footer-bottom-content">
-                    <p>&copy; 2025 Aseneskak Casino. All rights reserved.</p>
                     <div class="footer-badges">
                         <span class="badge">SSL Certificate</span>
-                        <span class="badge">18+ Only</span>
-                        <span class="badge">Responsible Gaming</span>
                     </div>
                 </div>
                 <div class="disclaimer">
                     <p><strong>Disclaimer:</strong> Aseneskakcasino.com provides general information about Aseneskak Casino for informational purposes only. While we strive to ensure all content is accurate and up to date, we do not guarantee the completeness or reliability of the information presented. Guests must be of legal gambling age to enter the casino premises or participate in gaming activities. Please gamble responsibly. Aseneskak Casino reserves the right to make changes to promotions, hours, and offerings without prior notice. By using this website, you agree to our terms of use and understand that all activities mentioned are subject to local laws and regulations.</p>
                 </div>
+                <p class="footer-copyright">&copy; 2025 Aseneskak Casino. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="js/script.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.about-carousel').owlCarousel({
+                loop: true,
+                margin: 20,
+                nav: true,
+                dots: true,
+                autoplay: true,
+                autoplayTimeout: 5000,
+                autoplayHoverPause: true,
+                responsive: {
+                    0: { items: 1 },
+                    600: { items: 2 },
+                    1000: { items: 3 }
+                },
+                navText: ['<i class="fas fa-chevron-left"></i>', '<i class="fas fa-chevron-right"></i>']
+            });
+        });
+    </script>
 </body>
 </html> 

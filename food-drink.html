@@ -12,6 +12,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
+     <!-- COVID-19 Banner -->
+     <div class="covid-banner">
+        <p>We follow the Government of Manitoba COVID-19 guidelines. To find out more, <a href="#" class="covid-link">click here!</a></p>
+    </div>
+
     <!-- Header -->
     <header class="header">
         <nav class="navbar">
@@ -23,7 +28,7 @@
                 </div>
                 <ul class="nav-menu">
                     <li class="nav-item">
-                        <a href="./" class="nav-link">Home</a>
+                        <a href="./" class="nav-link ">Home</a>
                     </li>
                     <li class="nav-item">
                         <a href="gaming" class="nav-link">Gaming</a>
@@ -41,6 +46,11 @@
                         <a href="contact" class="nav-link">Contact</a>
                     </li>
                 </ul>
+                <div class="social-icon">
+                    <a href="#" class="facebook-link">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                </div>
                 <div class="hamburger">
                     <span class="bar"></span>
                     <span class="bar"></span>
@@ -63,9 +73,10 @@
         <!-- High Roller Lounge Section -->
         <section class="lounge-section">
             <div class="container">
-                <h2>High Roller Lounge</h2>
+               
                 <div class="lounge-content">
                     <div class="lounge-text">
+                        <h2>High Roller Lounge</h2>
                         <p>The High Roller Lounge is the heart of our dining experience, featuring a variety of dishes made fresh daily. From classic comfort food to light snacks, our menu offers something for everyone. Enjoy your meal alongside a selection of beverages, including soft drinks, beer, and spirits.</p>
                     </div>
                     <div class="lounge-image">
@@ -81,29 +92,49 @@
                 <h2>Menu Highlights</h2>
                 <div class="menu-grid">
                     <div class="menu-item">
-                        <i class="fas fa-hamburger"></i>
-                        <h3>Burgers & Sandwiches</h3>
-                        <p>Made to order with fresh ingredients</p>
+                        <div class="menu-image">
+                            <img src="./img/food-01.jpg" alt="Burgers & Sandwiches">
+                        </div>
+                        <div class="menu-content">
+                            <h3>Burgers & Sandwiches</h3>
+                            <p>Made to order with fresh ingredients</p>
+                        </div>
                     </div>
                     <div class="menu-item">
-                        <i class="fas fa-leaf"></i>
-                        <h3>Soups & Salads</h3>
-                        <p>Light and refreshing options</p>
+                        <div class="menu-image">
+                            <img src="./img/food-02.jpg" alt="Soups & Salads">
+                        </div>
+                        <div class="menu-content">
+                            <h3>Soups & Salads</h3>
+                            <p>Light and refreshing options</p>
+                        </div>
                     </div>
                     <div class="menu-item">
-                        <i class="fas fa-star"></i>
-                        <h3>Daily Specials</h3>
-                        <p>Seasonal dishes and chef's favourites</p>
+                        <div class="menu-image">
+                            <img src="./img/food-03.jpg" alt="Daily Specials">
+                        </div>
+                        <div class="menu-content">
+                            <h3>Daily Specials</h3>
+                            <p>Seasonal dishes and chef's favourites</p>
+                        </div>
                     </div>
                     <div class="menu-item">
-                        <i class="fas fa-cheese"></i>
-                        <h3>Appetizers & Snacks</h3>
-                        <p>Perfect for sharing or quick bites</p>
+                        <div class="menu-image">
+                            <img src="./img/food-04.jpg" alt="Appetizers & Snacks">
+                        </div>
+                        <div class="menu-content">
+                            <h3>Appetizers & Snacks</h3>
+                            <p>Perfect for sharing or quick bites</p>
+                        </div>
                     </div>
                     <div class="menu-item">
-                        <i class="fas fa-ice-cream"></i>
-                        <h3>Desserts</h3>
-                        <p>Sweet treats to finish your meal</p>
+                        <div class="menu-image">
+                            <img src="./img/food-05.jpg" alt="Desserts">
+                        </div>
+                        <div class="menu-content">
+                            <h3>Desserts</h3>
+                            <p>Sweet treats to finish your meal</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -146,39 +177,53 @@
         <section class="faq-section">
             <div class="container">
                 <h2>Frequently Asked Questions</h2>
-                <div class="faq-grid">
+                <div class="faq-accordion">
                     <div class="faq-item">
-                        <h3>What are the High Roller Lounge hours?</h3>
-                        <p>The lounge is open during casino operating hours, typically from 10:00 AM to 1:00 AM.</p>
+                        <div class="faq-question">
+                            <h3>What are the High Roller Lounge hours?</h3>
+                            <span class="faq-icon"></span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>The lounge is open during casino operating hours, typically from 10:00 AM to 1:00 AM.</p>
+                        </div>
                     </div>
                     <div class="faq-item">
-                        <h3>Do you accommodate dietary restrictions?</h3>
-                        <p>Yes, please inform our staff of any allergies or dietary needs, and we'll do our best to accommodate.</p>
+                        <div class="faq-question">
+                            <h3>Do you accommodate dietary restrictions?</h3>
+                            <span class="faq-icon"></span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Yes, please inform our staff of any allergies or dietary needs, and we'll do our best to accommodate.</p>
+                        </div>
                     </div>
                     <div class="faq-item">
-                        <h3>Is there a dress code for the lounge?</h3>
-                        <p>No formal dress code—casual attire is welcome.</p>
+                        <div class="faq-question">
+                            <h3>Is there a dress code for the lounge?</h3>
+                            <span class="faq-icon"></span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>No formal dress code—casual attire is welcome.</p>
+                        </div>
                     </div>
                     <div class="faq-item">
-                        <h3>Can I make a reservation?</h3>
-                        <p>Reservations are available for group events and catering. Contact the casino for more information.</p>
+                        <div class="faq-question">
+                            <h3>Can I make a reservation?</h3>
+                            <span class="faq-icon"></span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Reservations are available for group events and catering. Contact the casino for more information.</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
     </main>
 
-    <!-- Footer -->
-    <footer class="footer">
+     <!-- Footer -->
+     <footer class="footer">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <div class="nav-logo footr-logo">
-                        <a href="./">
-                            <img src="./img/logo.svg" alt="Aseneskak Casino Logo" class="logo-img">
-                        </a>
-                    </div>
-                    <p>Your Northern Manitoba Gaming Destination</p>
                     <div class="social-links">
                         <a href="#"><i class="fab fa-facebook"></i></a>
                         <a href="#"><i class="fab fa-x-twitter"></i></a>
@@ -186,18 +231,7 @@
                     </div>
                 </div>
                 <div class="footer-section">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="gaming">Gaming</a></li>
-                        <li><a href="trappers-club">Trapper's Club</a></li>
-                        <li><a href="food-drink">Food & Drink</a></li>
-                        <li><a href="about">About</a></li>
-                        <li><a href="contact">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Legal</h4>
-                    <ul>
+                    <ul class="legal-links-horizontal">
                         <li><a href="privacy-policy">Privacy Policy</a></li>
                         <li><a href="personal-data-policy">Personal Data Policy</a></li>
                         <li><a href="terms-conditions">Terms and Conditions</a></li>
@@ -205,25 +239,18 @@
                         <li><a href="responsible-gaming">Responsible Gaming</a></li>
                     </ul>
                 </div>
-                <div class="footer-section">
-                    <h4>Contact Info</h4>
-                    <p><i class="fas fa-envelope"></i> info@aseneskakcasino.com</p>
-                    <p><i class="fas fa-map-marker-alt"></i> Opaskwayak Cree Nation, MB</p>
-                    
-                </div>
+                
             </div>
             <div class="footer-bottom">
                 <div class="footer-bottom-content">
-                    <p>&copy; 2025 Aseneskak Casino. All rights reserved.</p>
                     <div class="footer-badges">
                         <span class="badge">SSL Certificate</span>
-                        <span class="badge">18+ Only</span>
-                        <span class="badge">Responsible Gaming</span>
                     </div>
                 </div>
                 <div class="disclaimer">
                     <p><strong>Disclaimer:</strong> Aseneskakcasino.com provides general information about Aseneskak Casino for informational purposes only. While we strive to ensure all content is accurate and up to date, we do not guarantee the completeness or reliability of the information presented. Guests must be of legal gambling age to enter the casino premises or participate in gaming activities. Please gamble responsibly. Aseneskak Casino reserves the right to make changes to promotions, hours, and offerings without prior notice. By using this website, you agree to our terms of use and understand that all activities mentioned are subject to local laws and regulations.</p>
                 </div>
+                <p class="footer-copyright">&copy; 2025 Aseneskak Casino. All rights reserved.</p>
             </div>
         </div>
     </footer>

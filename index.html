@@ -8,10 +8,17 @@
     <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
     <link rel="icon" type="image/x-icon" href="img/favicon.ico">
     <link rel="stylesheet" href="css/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
 </head>
 <body>
+    <!-- COVID-19 Banner -->
+    <div class="covid-banner">
+        <p>We follow the Government of Manitoba COVID-19 guidelines. To find out more, <a href="#" class="covid-link">click here!</a></p>
+    </div>
+
     <!-- Header -->
     <header class="header">
         <nav class="navbar">
@@ -41,6 +48,11 @@
                         <a href="contact" class="nav-link">Contact</a>
                     </li>
                 </ul>
+                <div class="social-icon">
+                    <a href="#" class="facebook-link">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                </div>
                 <div class="hamburger">
                     <span class="bar"></span>
                     <span class="bar"></span>
@@ -50,15 +62,43 @@
         </nav>
     </header>
 
-    <!-- Hero Section -->
+    <!-- Hero Section with Slider -->
     <section class="hero">
-        <div class="hero-content">
-            
-            <h2>Aseneskak Casino</h2>
-            <h1> Your Northern Manitoba Gaming Destination</h1>
-            <!--p>Proudly Indigenous-owned and operated in Opaskwayak Cree Nation</p-->
-            <!--a href="gaming" class="cta-button">Explore Gaming</a-->
+        <div class="hero-slider">
+            <div class="slide active">
+                <div class="hero-content">
+                    <h2>Aseneskak Casino</h2>
+                    <h1>Your Northern Manitoba Gaming Destination</h1>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="hero-content">
+                    <h2>Welcome to</h2>
+                    <h1>Aseneskak Casino</h1>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="hero-content">
+                    <h2>Celebrating</h2>
+                    <h1>20 YEARS!</h1>
+                </div>
+            </div>
         </div>
+        
+        <!-- Slider Navigation -->
+        <div class="slider-nav">
+            <button class="slider-dot active" data-slide="0"></button>
+            <button class="slider-dot" data-slide="1"></button>
+            <button class="slider-dot" data-slide="2"></button>
+        </div>
+        
+        <!-- Slider Controls -->
+        <button class="slider-control prev">
+            <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="slider-control next">
+            <i class="fas fa-chevron-right"></i>
+        </button>
     </section>
 
     <!-- Main Content -->
@@ -78,50 +118,54 @@
         <section class="features-section">
             <div class="container">
                 <h2>What You'll Find Here</h2>
-                <div class="features-grid">
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                            <i class="fas fa-gamepad"></i>
+                <div class="features-carousel owl-carousel owl-theme">
+                    
+                    <div class="feature-card item">
+                        <div class="feature-bg" style="background-image: url('./img/slot.png');"></div>
+                        <div class="feature-content">
+                            <h3>170+ Slot Machines</h3>
+                            <p>Modern and classic machines with multiple denominations</p>
                         </div>
-                        <h3>170+ Slot Machines</h3>
-                        <p>Modern and classic machines with multiple denominations</p>
                     </div>
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                            <i class="fas fa-dice"></i>
+
+                    <div class="feature-card item">
+                        <div class="feature-bg" style="background-image: url('./img/table-game.png');"></div>
+                        <div class="feature-content">
+                            <h3>Live Table Games</h3>
+                            <p>Available on select nights – blackjack and more</p>
                         </div>
-                        <h3>Live Table Games</h3>
-                        <p>Available on select nights – blackjack and more</p>
                     </div>
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                            <i class="fas fa-utensils"></i>
+                    <div class="feature-card item">
+                        <div class="feature-bg" style="background-image: url('./img/rollar-loungh.png');"></div>
+                        <div class="feature-content">
+                            <h3>High Roller Lounge</h3>
+                            <p>Great food and drinks available daily</p>
                         </div>
-                        <h3>High Roller Lounge</h3>
-                        <p>Great food and drinks available daily</p>
                     </div>
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                            <i class="fas fa-bus"></i>
+                    <div class="feature-card item">
+                        <div class="feature-bg" style="background-image: url('./img/join-img.png');"></div>
+                        <div class="feature-content">
+                            <h3>Shuttle Service</h3>
+                            <p>Free for Trapper's Club members</p>
                         </div>
-                        <h3>Shuttle Service</h3>
-                        <p>Free for Trapper's Club members</p>
                     </div>
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                            <i class="fas fa-star"></i>
+                    <div class="feature-card item">
+                        <div class="feature-bg" style="background-image: url('./img/community.png');"></div>
+                        <div class="feature-content">
+                            <h3>Loyalty Program</h3>
+                            <p>Earn points, rewards, and bonus credit</p>
                         </div>
-                        <h3>Loyalty Program</h3>
-                        <p>Earn points, rewards, and bonus credit</p>
                     </div>
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                            <i class="fas fa-building"></i>
+                    <div class="feature-card item">
+                        <div class="feature-bg" style="background-image: url('./img/gaming-banner.png');"></div>
+                        <div class="feature-content">
+                            <h3>Spacious Gaming Floor</h3>
+                            <p>Bright, clean, and easy to navigate</p>
                         </div>
-                        <h3>Spacious Gaming Floor</h3>
-                        <p>Bright, clean, and easy to navigate</p>
                     </div>
                 </div>
+                
+
             </div>
         </section>
 
@@ -158,16 +202,18 @@
             </div>
         </section>
 
-        <!-- Community Section -->
-        <section class="community-section">
+        <section class="intro-section">
             <div class="container">
-                <div class="community-content">
-                    <h2>A Community-Focused Casino</h2>
+                <div class="intro-content">
+                    <h2> Community-Focused Casino</h2>
                     <p>Aseneskak Casino is more than just a gaming floor. As a business owned by six First Nations partners, we're committed to economic development, local employment, and giving back. Our staff reflects the region we serve, and we aim to provide every guest with a respectful and enjoyable visit.</p>
                     <p>We continue to invest in upgrades, promotions, and experiences that support both our community and our visitors.</p>
+                
                 </div>
             </div>
         </section>
+
+        
 
         <!-- Newsletter Section -->
         <section class="newsletter-section">
@@ -185,30 +231,60 @@
         <section class="faq-section">
             <div class="container">
                 <h2>Frequently Asked Questions</h2>
-                <div class="faq-grid">
+                <div class="faq-accordion">
                     <div class="faq-item">
-                        <h3>Where is Aseneskak Casino located?</h3>
-                        <p>We're located in Opaskwayak Cree Nation, just outside The Pas, MB—directly off Highway 10.</p>
+                        <div class="faq-question">
+                            <h3>Where is Aseneskak Casino located?</h3>
+                            <span class="faq-icon"></span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>We're located in Opaskwayak Cree Nation, just outside The Pas, MB—directly off Highway 10.</p>
+                        </div>
                     </div>
                     <div class="faq-item">
-                        <h3>What are your hours of operation?</h3>
-                        <p>Open daily from 10:00 AM to 1:00 AM. Holiday hours may vary.</p>
+                        <div class="faq-question">
+                            <h3>What are your hours of operation?</h3>
+                            <span class="faq-icon"></span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Open daily from 10:00 AM to 1:00 AM. Holiday hours may vary.</p>
+                        </div>
                     </div>
                     <div class="faq-item">
-                        <h3>Is there a hotel at the casino?</h3>
-                        <p>No, but nearby lodging is available at the Wescana Inn and other local options in The Pas.</p>
+                        <div class="faq-question">
+                            <h3>Is there a hotel at the casino?</h3>
+                            <span class="faq-icon"></span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>No, but nearby lodging is available at the Wescana Inn and other local options in The Pas.</p>
+                        </div>
                     </div>
                     <div class="faq-item">
-                        <h3>Do you offer table games?</h3>
-                        <p>Yes. Table games like blackjack are available on select evenings.</p>
+                        <div class="faq-question">
+                            <h3>Do you offer table games?</h3>
+                            <span class="faq-icon"></span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Yes. Table games like blackjack are available on select evenings.</p>
+                        </div>
                     </div>
                     <div class="faq-item">
-                        <h3>What's the age requirement?</h3>
-                        <p>Guests must be 18 years of age or older to enter and play.</p>
+                        <div class="faq-question">
+                            <h3>What's the age requirement?</h3>
+                            <span class="faq-icon"></span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Guests must be 18 years of age or older to enter and play.</p>
+                        </div>
                     </div>
                     <div class="faq-item">
-                        <h3>How do I join the Trapper's Club?</h3>
-                        <p>It's free and easy to sign up at the front desk. Members get access to promotions, draws, and bonus play.</p>
+                        <div class="faq-question">
+                            <h3>How do I join the Trapper's Club?</h3>
+                            <span class="faq-icon"></span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>It's free and easy to sign up at the front desk. Members get access to promotions, draws, and bonus play.</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -220,12 +296,6 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <div class="nav-logo footr-logo">
-                        <a href="./">
-                            <img src="./img/logo.svg" alt="Aseneskak Casino Logo" class="logo-img">
-                        </a>
-                    </div>
-                    <p>Your Northern Manitoba Gaming Destination</p>
                     <div class="social-links">
                         <a href="#"><i class="fab fa-facebook"></i></a>
                         <a href="#"><i class="fab fa-x-twitter"></i></a>
@@ -233,18 +303,7 @@
                     </div>
                 </div>
                 <div class="footer-section">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="gaming">Gaming</a></li>
-                        <li><a href="trappers-club">Trapper's Club</a></li>
-                        <li><a href="food-drink">Food & Drink</a></li>
-                        <li><a href="about">About</a></li>
-                        <li><a href="contact">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Legal</h4>
-                    <ul>
+                    <ul class="legal-links-horizontal">
                         <li><a href="privacy-policy">Privacy Policy</a></li>
                         <li><a href="personal-data-policy">Personal Data Policy</a></li>
                         <li><a href="terms-conditions">Terms and Conditions</a></li>
@@ -252,29 +311,24 @@
                         <li><a href="responsible-gaming">Responsible Gaming</a></li>
                     </ul>
                 </div>
-                <div class="footer-section">
-                    <h4>Contact Info</h4>
-                    <p><i class="fas fa-envelope"></i> info@aseneskakcasino.com</p>
-                    <p><i class="fas fa-map-marker-alt"></i> Opaskwayak Cree Nation, MB</p>
-                  
-                </div>
+                
             </div>
             <div class="footer-bottom">
                 <div class="footer-bottom-content">
-                    <p>&copy; 2025 Aseneskak Casino. All rights reserved.</p>
                     <div class="footer-badges">
                         <span class="badge">SSL Certificate</span>
-                        <span class="badge">18+ Only</span>
-                        <span class="badge">Responsible Gaming</span>
                     </div>
                 </div>
                 <div class="disclaimer">
                     <p><strong>Disclaimer:</strong> Aseneskakcasino.com provides general information about Aseneskak Casino for informational purposes only. While we strive to ensure all content is accurate and up to date, we do not guarantee the completeness or reliability of the information presented. Guests must be of legal gambling age to enter the casino premises or participate in gaming activities. Please gamble responsibly. Aseneskak Casino reserves the right to make changes to promotions, hours, and offerings without prior notice. By using this website, you agree to our terms of use and understand that all activities mentioned are subject to local laws and regulations.</p>
                 </div>
+                <p class="footer-copyright">&copy; 2025 Aseneskak Casino. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html> 
