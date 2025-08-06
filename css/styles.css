@@ -344,11 +344,13 @@ body {
 .why-choose-section {
     background: #fff;
 }
-
+.features-section .owl-dots {
+    display: none;
+}
 /* Why Choose Card */
 .why-choose-card {
     display: flex;
-
+align-items: center;
     gap: 1rem;
     background: #fff;
     border-radius: 15px;
@@ -997,7 +999,10 @@ section.why-choose-section {
     line-height: 1.6;
     text-align: center;
 }
-
+.gaming-carousel .owl-dots,
+.about-carousel .owl-dots {
+    display: none;
+}
 /* Responsive Design */
     @media (max-width: 991px) {
         .logo-img {
@@ -1005,6 +1010,11 @@ section.why-choose-section {
         }
         .header {
             position: fixed;
+
+        }
+        .why-choose-card {
+
+        align-items: normal;
 
         }
         .why-choose-content {
@@ -4309,7 +4319,7 @@ section.why-choose-section {
     position: relative;
     border-radius: 15px;
     overflow: hidden;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+
     transition: transform 0.3s ease;
 }
 
@@ -5352,7 +5362,7 @@ section.why-choose-section {
     position: relative;
     border-radius: 15px;
     overflow: hidden;
-    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+
     transition: transform 0.3s ease;
 }
 
