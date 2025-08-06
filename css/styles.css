@@ -1964,14 +1964,7 @@ section.why-choose-section {
     color: #333;
 }
 
-.policy-content h2 {
-    font-size: 2rem;
-    font-weight: 600;
-    margin: 2.5rem 0 1rem;
-    color: #1a1a2e;
-    border-bottom: 2px solid #ffd700;
-    padding-bottom: 0.5rem;
-}
+
 
 .policy-content h3 {
     font-size: 1.4rem;
@@ -2700,7 +2693,7 @@ section.why-choose-section {
     font-weight: 600;
     margin: 2.5rem 0 1rem;
     color: #1a1a2e;
-    border-bottom: 2px solid #ffd700;
+    border-bottom: 2px solid #8b4513;
     padding-bottom: 0.5rem;
 }
 
